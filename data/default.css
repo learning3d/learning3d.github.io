@@ -29,9 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    border-bottom: 1px solid #F4F4F4;
+    
     font-size: 26px;
-    padding: 40px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 h3 {
@@ -102,7 +102,7 @@ img {
 }
 
 #logo h1 {
-    padding: 10px 0 0 0px;
+    padding: 20px 0 0 0px;
     font-size: 32px;
 }
 
@@ -115,7 +115,7 @@ img {
 }
 
 #logo h2 {
-    padding: 6px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     font-size: 19px;
     border: none;
 }
@@ -215,15 +215,31 @@ img {
 
 
 
+/* Schedule */
+
 table.schedule {
-    border-color: #999;
-    border-style: none;
-	text-align: left;
-    border-width: 0 0 1px 1px;
-    border-collapse: collapse;
-	background-color: #FFF;
-	width: 100%;
-	color: #000;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: none;
+	border-color: #000;
+	border-collapse: collapse;
+	background-color: white;
+    font-size: medium;
+    color: #000;
+}
+
+.schedule_week {
+	font-size: small;
+	background-color: #CCF;
+    color:#000
+}
+
+.schedule td {
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+	padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 table#program td {
@@ -252,4 +268,19 @@ tr.row_type_A td {
 }
 tr.row_type_B td {
 	padding: 10px 10px;
+}
+
+
+
+.instructorphoto img {
+    width: 120px;
+    border-radius: 120px;
+    margin-bottom: 10px;
+}
+.instructor {
+display: inline-block;
+width: 150px;
+text-align: center;
+margin-right: 20px;
+margin-top: 20px;
 }
