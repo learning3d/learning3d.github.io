@@ -211,10 +211,6 @@ img {
 }
 
 
-
-
-
-
 /* Schedule */
 
 table.schedule {
@@ -271,16 +267,16 @@ tr.row_type_B td {
 }
 
 
-
+/* instructor */
 .instructorphoto img {
     width: 120px;
     border-radius: 120px;
     margin-bottom: 10px;
 }
 .instructor {
-display: inline-block;
-width: 150px;
-text-align: center;
-margin-right: 20px;
-margin-top: 20px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
 }
