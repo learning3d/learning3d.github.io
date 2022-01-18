@@ -269,8 +269,8 @@ tr.row_type_B td {
 
 /* instructor */
 .instructorphoto img {
-    width: 120px;
-    border-radius: 120px;
+    height: 120px;
+    border-radius: 20px;
     margin-bottom: 10px;
 }
 .instructor {
