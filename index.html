@@ -1,139 +1,164 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
 
-    <link rel="icon" type="image/png" href="data/seal_icon.png">
-    <title>Learning for 3D Vision</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link href="data/default.css" rel="stylesheet" type="text/css" />
-    <meta property='og:title' content='Learning for 3D Vision'/>
-    <meta property='og:url' content='https://learning3d.github.io/' />
-    <meta property='og:image' content='https://learning3d.github.io/data/teaserim.png' />
-    <meta property="og:type" content="website" />
-  </head>
+<head>
 
-  <body>
-      <div id="header">
-      <div id="logo">
-        <h1>
+  <link rel="icon" type="image/png" href="data/seal_icon.png">
+  <title>Learning for 3D Vision</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="data/default.css" rel="stylesheet" type="text/css" />
+  <meta property='og:title' content='Learning for 3D Vision' />
+  <meta property='og:url' content='https://learning3d.github.io/' />
+  <meta property='og:image' content='https://learning3d.github.io/data/teaserim.png' />
+  <meta property="og:type" content="website" />
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      <h1 class="logo-header">
           <center>
-              16-889: Learning for 3D Vision
+          16-889: Learning for 3D Vision
           </center>
-        </h1>
+      </h1>
 
-        <h2>
+      <h2 class="logo-header">
           <center>
-            Spring 2022
+          Spring 2022
           </center>
-        </h2><br>
+      </h2><br>
 
-        <h2>
-          <center>           
-            <span style="font-size:92%;color:#777;font-weight:normal">Instructor: <a href="https://shubhtuls.github.io">Shubham Tulsiani</a></span><br/>
-            <span style="font-size:92%;color:#777;font-weight:normal">Tuesday and Thursday, 4:40-6:00pm, POS A35</span><br/>
-          </center>
-        </h2><br>
-
-        <h2>
+      <h2 class="logo-header">
           <table border="0" align="center">
           <td colspan="5" align="center"><span class="menubar">
-            [ <a href="index.html">Home</a> | 
-            <a href="./pages/schedule.html">Schedule</a> | 
-            <a href="https://piazza.com/class/kvtncsfwx8768l">Piazza </a> | 
-            <a href="https://canvas.cmu.edu/courses/27433">Canvas</a> |
-            <a href="https://cmu.zoom.us/j/93119615481?pwd=RFBOM1VCRFprWEp4RlJEU01mNm5hdz09">Zoom (Lecture)</a> |
-            <a href="https://docs.google.com/spreadsheets/d/1m7Vm9Gyu1nycJp8JdgFfikeR3jsDC6Ln7mWhh0RFyCU/edit#gid=0">Office Hour</a> ]
-          </span></td>
+              [ <a href="index.html">Home</a> |
+              <a href="pages/schedule.html">Schedule</a> |
+              <a href="pages/assignments.html">Assignments</a> |
+              <a href="https://piazza.com/class/kvtncsfwx8768l">Piazza </a> |
+              <a href="https://canvas.cmu.edu/courses/27433">Canvas</a> |
+              <a href="https://cmu.zoom.us/j/93119615481?pwd=RFBOM1VCRFprWEp4RlJEU01mNm5hdz09">Zoom (Lecture)</a> |
+              <a href="https://docs.google.com/spreadsheets/d/1m7Vm9Gyu1nycJp8JdgFfikeR3jsDC6Ln7mWhh0RFyCU/edit#gid=0">Office
+                  Hour</a> ]
+              </span></td>
           </table>
-        </h2>
+      </h2>
 
-      </div>
-    
-    
-
-
-  <div id="splash"><center><img src="data/teaserim.png" alt="" width="880"/></center></div>
-
-	<div id="content">
-
-    <h2>Course Description</h2>
-    <p>
-    Any autonomous agent we develop must perceive and act in a 3D world. The ability to infer, model, and utilize 3D representations is therefore of central importance in AI, with applications ranging from robotic manipulation and self-driving to virtual reality and image manipulation. While 3D understanding has been a longstanding goal in computer vision, it has witnessed several impressive advances due to the rapid recent progress in (deep) learning techniques. The goal of this course is to explore this confluence of 3D Vision and Learning-based methods. In particular, this course will cover topics including -
-
-    <br>
-
-    <left>
-      <table id="topics" style="width:80%">
-        <tr>
-          <td colspan="2"> <left>&bull; Explicit, Implicit, and Neural 3D Representations</left> </td>
-          <td> <left>&bull; Differentiable Rendering</left> </td>
-        </tr>
-        <tr>
-          <td colspan="2"> <left>&bull; Single-view 3D Prediction: Objects, Scenes, and Humans</left> </td>
-          <td> <left>&bull; Neural Rendering</left> </td>
-        </tr>
-        <tr>
-          <td colspan="3"> <left>&bull; Multi-view 3D Inference: Radiance Fields, Multi-plane Images,  Implicit Surfaces, etc.</left> </td>
-        </tr>
-        <tr>
-          <td> <left>&bull; Generative 3D Models</left> </td>
-          <td> <left>&bull; Shape Abstraction</left> </td>
-          <td> <left>&bull; Mesh and Point cloud processing</left> </td>
-        </tr>
-      </table>
-    </left>
-    </p>
-
-    <h2>Format and Prerequisites</h2>
-    <p>
-    The course will be lecture-based, and the grades will primarily be determined by assignments and a final project. The course will require as background good coding skills, and an understanding of basics in Computer Vision (e.g. image formation, ray optics) and Machine Learning (e.g. optimization, neural networks).
-
-    <h2>Course Staff</h2>
-    <p>Please use the course <a href="https://piazza.com/class/kvtncsfwx8768l">Piazza page</a> for all communication with course staff </p>
-    <h3> Course Instructor </h3>
-
-    <div class="instructor">
-      <a href="https://shubhtuls.github.io">
-      <div class="instructorphoto"><img src="./data/instructor.jpg"></div>
-      <div>Shubham Tulsiani</div>
-      </a>
-    </div>
-
-    </br>
-    <br>
-    <h3> Teaching Assistants </h3>
-
-    <div class="instructor">
-      <div class="instructorphoto"><img src="./data/Benjamin.jpg"></div>
-      <div>Benjamin Attal</div>
-      
-    </div>
-
-    <div class="instructor">
-      <a href="https://jasonyzhang.com">
-        <div class="instructorphoto"><img src="./data/jason.jpg"></div>
-        <div>Jason Zhang</div>
-      </a>
-      
-    </div>
-
-    <div class="instructor">
-      <div class="instructorphoto"><img src="./data/Mihir.jpeg"></div> 
-      <div>Mihir Prabhudesai</div>
-      
-    </div>
-
-    <div class="instructor">
-      <a href="https://www.linkedin.com/in/HaoWu1996">
-      <div class="instructorphoto"><img src="./data/Hao.jpeg"></div>
-      <div>Hao Wu</div>
-      </a>
     </div>
 
 
-    <br></br></br>
-    <div style="clear: both;">&nbsp;</div>
-  </div>
+
+
+    <div id="splash">
+      <center><img src="data/teaserim.png" alt="" width="880" /></center>
+    </div>
+
+    <div id="content">
+
+      <h2>Course Description</h2>
+      <p>
+        Any autonomous agent we develop must perceive and act in a 3D world. The ability to infer, model, and utilize 3D
+        representations is therefore of central importance in AI, with applications ranging from robotic manipulation
+        and self-driving to virtual reality and image manipulation. While 3D understanding has been a longstanding goal
+        in computer vision, it has witnessed several impressive advances due to the rapid recent progress in (deep)
+        learning techniques. The goal of this course is to explore this confluence of 3D Vision and Learning-based
+        methods. In particular, this course will cover topics including -
+
+        <br>
+
+        <left>
+          <table id="topics" style="width:80%">
+            <tr>
+              <td colspan="2">
+                <left>&bull; Explicit, Implicit, and Neural 3D Representations</left>
+              </td>
+              <td>
+                <left>&bull; Differentiable Rendering</left>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <left>&bull; Single-view 3D Prediction: Objects, Scenes, and Humans</left>
+              </td>
+              <td>
+                <left>&bull; Neural Rendering</left>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <left>&bull; Multi-view 3D Inference: Radiance Fields, Multi-plane Images, Implicit Surfaces, etc.
+                </left>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <left>&bull; Generative 3D Models</left>
+              </td>
+              <td>
+                <left>&bull; Shape Abstraction</left>
+              </td>
+              <td>
+                <left>&bull; Mesh and Point cloud processing</left>
+              </td>
+            </tr>
+          </table>
+        </left>
+      </p>
+
+      <h2>Format and Prerequisites</h2>
+      <p>
+        The course will be lecture-based, and the grades will primarily be determined by assignments and a final
+        project. The course will require as background good coding skills, and an understanding of basics in Computer
+        Vision (e.g. image formation, ray optics) and Machine Learning (e.g. optimization, neural networks).
+
+        <h2>Course Staff</h2>
+        <p>Please use the course <a href="https://piazza.com/class/kvtncsfwx8768l">Piazza page</a> for all communication
+          with course staff </p>
+        <h3> Course Instructor </h3>
+
+        <div class="instructor">
+          <a href="https://shubhtuls.github.io">
+            <div class="instructorphoto"><img src="./data/instructor.jpg"></div>
+            <div>Shubham Tulsiani</div>
+          </a>
+        </div>
+
+        </br>
+        <br>
+        <h3> Teaching Assistants </h3>
+
+        <div class="instructor">
+          <a href="https://www.battal.me">
+            <div class="instructorphoto"><img src="./data/Benjamin.jpg"></div>
+            <div>Benjamin Attal</div>
+          </a>
+        </div>
+
+        <div class="instructor">
+          <a href="https://jasonyzhang.com">
+            <div class="instructorphoto"><img src="./data/jason.jpg"></div>
+            <div>Jason Zhang</div>
+          </a>
+
+        </div>
+
+        <div class="instructor">
+          <div class="instructorphoto"><img src="./data/Mihir.jpeg"></div>
+          <div>Mihir Prabhudesai</div>
+
+        </div>
+
+        <div class="instructor">
+          <a href="https://www.linkedin.com/in/HaoWu1996">
+            <div class="instructorphoto"><img src="./data/Hao.jpeg"></div>
+            <div>Hao Wu</div>
+          </a>
+        </div>
+
+
+        <br></br></br>
+        <div style="clear: both;">&nbsp;</div>
+    </div>
 
 </body>
+
 </html>
