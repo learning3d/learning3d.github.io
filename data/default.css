@@ -733,3 +733,9 @@ h1 {
 #evaluation {
   font-size: 1.5em
 }
+
+h2.course-info {
+    
+    font-size: 26px;
+    padding: 20px 0 0 0;
+}
