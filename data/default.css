@@ -78,7 +78,7 @@ a:hover {
 /* Header */
 
 #header {
-    width: 917px;
+    width: 1040px;
 	height: 200px;
     margin: 0 auto;
 }
@@ -160,7 +160,7 @@ a:hover {
 /* Splash */
 
 #splash {
-    width: 877px;
+    width: 1000px;
     margin: 0 auto;
     border-right: 20px solid #FFFFFF;
     border-left: 20px solid #FFFFFF;
@@ -168,9 +168,9 @@ a:hover {
 
 /* Content */
 #content {
-    width: 847px;
+    width: 1000px;
     margin: 0 auto;
-    padding: 0px 35px 0 35px;
+    padding: 0px 20px 0 20px;
     background: #FFFFFF;
     font-size: 14px;
 }
@@ -463,7 +463,7 @@ pre>code {
   padding-left: 30px
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 100px) {
   .wrapper {
     max-width: -webkit-calc(950px - (30px));
     max-width: calc(950px - (30px));
