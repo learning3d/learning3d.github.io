@@ -78,7 +78,7 @@ a:hover {
 /* Header */
 
 #header {
-    width: 917px;
+    width: 1017px;
 	height: 200px;
     margin: 0 auto;
 }
@@ -455,8 +455,8 @@ pre>code {
 }
 
 .wrapper {
-  max-width: -webkit-calc(950px - (30px * 2));
-  max-width: calc(950px - (30px * 2));
+  max-width: -webkit-calc(1050px - (30px * 2));
+  max-width: calc(1050px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
