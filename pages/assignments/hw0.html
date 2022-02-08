@@ -111,6 +111,8 @@
                   File
                   System(AFS)</a> to store and display webpages. Here is a step by step tutorial for how to do this:</p>
               <ol>
+                <li><strong>Please make sure to remove all version control directories (e.g. <code>.git</code>) from your website folder,
+                and make sure that the total size is reasonable (less than 20 mb)</strong></li>
                 <li>Place your website under folder <code class="language-plaintext highlighter-rouge">projX</code> and
                   zip
                   it. Please make sure that your main report page is called <code
@@ -119,14 +121,14 @@
                   the hw number.</li>
                 <li>Remote Copy. Use WinSCP or your favorite scp/ftp tool to copy all your files to your Andrew home
                   directory <code class="language-plaintext highlighter-rouge">scp projX.zip
-                    username@linux.gp.cs.cmu.edu:/afs/cs.cmu.edu/user/andrew_id/</code>.</li>
+                    username@linux.andrew.cmu.edu:/afs/andrew.cmu.edu/usr22/andrew_id/</code>.</li>
                 <li>Log in to a Unix Andrew machine: <code class="language-plaintext highlighter-rouge">ssh
                     username@linux.gp.cs.cmu.edu</code></li>
                 <li>File Transfer. Unzip your website and copy the folder to your project directory: <code
                     class="language-plaintext highlighter-rouge">cp -r projX/
-                    /afs/cs.cmu.edu/academic/class/16889-s22/www/projects/andrew_id/projX</code>.
+                    /afs/andrew.cmu.edu/course/16/889/www/projects/andrew_id/projX</code>.
                   The folder structure should look like this:
-                  <pre><code class="language-angular2html"> # suppose you are at /afs/cs.cmu.edu/academic/class/16889-s22/www/projects/andrew_id/
+                  <pre><code class="language-angular2html"> # suppose you are at /afs/andrew.cmu.edu/course/16/889/www/projects/andrew_id
  proj1/
      index.html
      data/...
@@ -135,13 +137,12 @@
      data/...
 </code></pre>
                 </li>
-                <!--
                 <li>Publish. The course website needs to be refreshed with your updated files. Do that by going <a
                     href="https://www.andrew.cmu.edu/server/publish.html">here</a>, choosing web pages for a course, and
                   inputing 16-889.</li>
                 <li>Last step, test your page by visiting: <code
                     class="language-plaintext highlighter-rouge">http://www.andrew.cmu.edu/course/16-889/projects/andrew_id/projX/</code>.
-                  `</li>--->
+                  `</li>
               </ol>
 
               <h3><strong>FAQs</strong></h3>
