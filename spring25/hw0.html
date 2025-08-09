@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>Learning for 3D Vision</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="../../data/default.css" rel="stylesheet" type="text/css" />
+  <link href="../../data/open-sans.css" media="stylesheet" type="text/css" media="all" />
+  <link href="../../data/font.css" rel="stylesheet" type="text/css" />
+  <link href="../../data/font-awesome.css" rel="stylesheet" type="text/css" />
+  <meta property='og:title' content='Learning for 3D Vision' />
+  <meta property='og:url' content='https://learning3d.github.io/' />
+  <meta property='og:image' content='https://learning3d.github.io/data/teaserim.png' />
+  <meta property="og:type" content="website" />
+  <script src="https://unpkg.com/htmlincludejs"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      <include src="./header.html"></include>
+
+      <p>&nbsp;</p>
+
+      <div id="content">
+        <div class="wrapper">
+          <div class="post">
+
+            <article class="post-content">
+              <h2 id="how-to-submit-assignments-in-general">How to submit assignments?</h2>
+              <p>For each assignment, you will be required to submit two packages unless specified otherwise: your
+                <strong>code</strong> and your <strong>webpage</strong>:</p>
+              <h3 id="submit-code-to-canvas">Submit code to Canvas</h3>
+              <p>For every assignment you should create a <code
+                  class="language-plaintext highlighter-rouge">main.py</code>
+                that can be used to run all your code for the assignment, and a <code
+                  class="language-plaintext highlighter-rouge">README.md</code> file that contains all required
+                documentation. Place all source code used to generate your results, as well as any documentation
+                required to
+                use the code, in a folder named <code
+                  class="language-plaintext highlighter-rouge">andrewid_code_projX</code> where X is the hw number. Zip
+                the
+                whole folder and submit the zip to Canvas. Here is an example of what your folder structure should look like:</p>
+              <pre><code class="language-angular2html">andrewid_code_proj1/
+    main.py
+    README.md
+    utils.py
+    ....
+## zip the whole folder to andrewid_code_proj1.zip:
+</code></pre>
+
+              <h3 id="submit-your-webpage-to-the-class-website">Submit your webpage to the class website</h3>
+              <p>We will use <a
+                  href="https://www.cmu.edu/computing/services/comm-collab/collaboration/afs/how-to/index.html">Andrew
+                  File
+                  System(AFS)</a> to store and display webpages. Here is a step by step tutorial for how to do this:</p>
+              <ol>
+                <li><strong>Please make sure to remove all version control directories (e.g. <code>.git</code>) from your website folder,
+                and make sure that the total size is reasonable (less than 20 mb)</strong></li>
+                <li>Place your website under folder <code class="language-plaintext highlighter-rouge">projX</code> and
+                  zip
+                  it. Please make sure that your main report page is called <code
+                    class="language-plaintext highlighter-rouge">index.html</code> so browsers open it automatically. X
+                  is
+                  the hw number.</li>
+                <li>Remote Copy. Use WinSCP or your favorite scp/ftp tool to copy all your files to your Andrew home
+                  directory <code class="language-plaintext highlighter-rouge">scp projX.zip
+                    username@linux.andrew.cmu.edu:/afs/andrew.cmu.edu/usr/andrew_id/</code>.</li>
+                <li>Log in to a Unix Andrew machine: <code class="language-plaintext highlighter-rouge">ssh
+                    username@linux.andrew.cmu.edu</code></li>
+                <li>File Transfer. Unzip your website and copy the folder to your project directory: <code
+                    class="language-plaintext highlighter-rouge">cp -r projX/
+                    /afs/andrew.cmu.edu/course/16/825/www/projects/andrew_id/projX</code>.
+                  The folder structure should look like this:
+                  <pre><code class="language-angular2html"> # suppose you are at /afs/andrew.cmu.edu/course/16/825/www/projects/andrew_id
+ proj1/
+     index.html
+     data/...
+ proj2/
+     index.html
+     data/...
+</code></pre>
+                </li>
+                <li>Publish. The course website needs to be refreshed with your updated files. Do that by going <a
+                    href="https://www.andrew.cmu.edu/server/publish.html">here</a>, choosing web pages for a course, and
+                  inputing 16-825.</li>
+                <li>Last step, test your page by visiting: <code
+                    class="language-plaintext highlighter-rouge">http://www.andrew.cmu.edu/course/16-825/projects/andrew_id/projX/</code>.
+                  </li>
+              </ol>
+
+              <h3><strong>FAQs</strong></h3>
+              <ul>
+                <li>Remember <strong>NOT to use any absolute links</strong> to images etc, as these will not work
+                  online.
+                  <strong>Only use relative links.</strong></li>
+                <li>Do not try using WinSCP or similar to copy directly from your laptop to your class project directory
+                  as
+                  you don’t have the credentials to do so.</li>
+                <li>Afs gets unhappy if your quota is full. Run <code class="language-plaintext highlighter-rouge">fs
+                    quota</code> to see the percent used; if it’s close to 100 percent, delete things (java and matlab
+                  dumps, large tif’s…) before trying the copy again.</li>
+                <li>If you have problems with images not appearing on your page, check that 1) filenames match your html
+                  files (e.g. .JPG vs .jpeg). 2) relative path is used from the correct root directory.</li>
+                <li>Please contact a TA if there are problems.</li>
+              </ul>
+
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
